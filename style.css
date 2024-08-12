@@ -9,7 +9,6 @@ a {
 body {
   font-family: 'Roboto';
   width: 100%;
-  max-width: 375px;
   margin: 0;
 }
 
@@ -18,15 +17,14 @@ body {
   display: flex;
   background-color: #EEEFF1;
   color: var(--Accent, #34547A);
-  font-size: 10px;
+  font-size: 3vw;
   font-style: normal;
   font-weight: 500;
-  line-height: 26.25px;
-  letter-spacing: 1.6px;
+  line-height: 5vw;
   align-items: center;
   justify-content: space-around;
   margin: 0;
-  padding: 20px 0px 0px 0px;
+  padding: 10px 0px;
 }
 
 .design {
@@ -39,19 +37,19 @@ body {
 
 .design_title {
   color: #000;
-  font-size: 25px;
+  font-size: 7vw;
   font-style: normal;
   font-weight: 500;
-  line-height: 78.75px;
+  line-height: 18vw;
   margin: 0;
 }
 
 .design_description {
   color: #727272;
-  font-size: 13px;
+  font-size: 3.5vw;
   font-style: normal;
   font-weight: 400;
-  line-height: 26.25px;
+  line-height: 7vw;
   padding: 0px 25px;
   margin: 0;
 }
@@ -59,14 +57,14 @@ body {
 .design_button {
   margin: 0 auto;
   text-align: center;
-  width: 33%;
+  max-width: 33%;
   background-color: #34547A;;
   color: #FFF;
-  font-size: 12px;
+  font-size: 2.5vw;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 1.6px;
-  padding: 10px 5px;
+  padding: 10px 10px;
   margin-top: 15px;
 }
 
@@ -81,7 +79,7 @@ body {
 .about_me_title { 
   color: #000;
   text-align: center;
-  font-size: 19px;
+  font-size: 5.5vw;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -90,10 +88,10 @@ body {
 .about_me_description {
   color: #727272;
   text-align: center;
-  font-size: 13px;
+  font-size: 3.5vw;
   font-style: normal;
   font-weight: 400;
-  line-height: 26.25px;
+  line-height: 7vw;
   padding: 0px 25px;
   margin: 0;
 }
@@ -125,7 +123,7 @@ body {
 
 .projects_description p {
   color: #FFF;
-  font-size: 11px;
+  font-size: 3vw;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -143,7 +141,7 @@ body {
 .work_title {
   color: #000;
   text-align: center;
-  font-size: 19px;
+  font-size: 5.5vw;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -154,10 +152,10 @@ body {
 .work_description {
   color: #727272;
   text-align: center;
-  font-size: 13px;
+  font-size: 3.5vw;
   font-style: normal;
   font-weight: 400;
-  line-height: 26.25px;
+  line-height: 7vw;
   padding: 0px 25px 20px;
   margin: 0;
 }
@@ -182,7 +180,7 @@ body {
 
 footer {
   background: var(--Accent, #34547A);
-  padding-top: 5px;
+  padding: 10px 0px;
 }
 
 footer p {
@@ -192,7 +190,7 @@ footer p {
 
 .name {
   color: #FFF;
-  font-size: 7px;
+  font-size: 2vw;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -200,8 +198,41 @@ footer p {
 
 .policy {
   color: #FFF;
-  font-size: 5px;
+  font-size: 1.5vw;
   font-style: normal;
   font-weight: 400;
-  line-height: 21.33px;
+  line-height: 6vw;
+}
+
+@media (min-width: 376px) and (max-width: 767px) {
+ .menu {
+  font-size: 2vw;
+  line-height: 4vw;
+  padding: 15px 0;
+ }
+ 
+ .design_title {
+  font-size: 5vw;
+  line-height: 15vw;
+ }
+
+ .design_description, 
+ .about_me_description, 
+ .work_description {
+  font-size: 2.5vw;
+  line-height: 5vw;
+ }
+
+ .design_button {
+  font-size: 2vw;
+  padding: 8px 8px;
+ }
+
+ .about_me_title, .work_title {
+  font-size: 4vw;
+ }
+
+ .projects_description p {
+  font-size: 2vw;
+ }
 }
