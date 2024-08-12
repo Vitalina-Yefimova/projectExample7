@@ -118,7 +118,7 @@ body {
 .projects_description {
   display: flex;
   flex-direction: column;
-  padding: 0px 10px 10px 10px;
+  padding: 0px 10px 10px 1vw;
 }
 
 .projects_description p {
@@ -165,7 +165,7 @@ body {
 }
 
 .video {
-  width: 90%;
+  width: 85%;
 }
 
 .play_button {
@@ -179,7 +179,7 @@ body {
 
 footer {
   background: var(--Accent, #34547A);
-  padding: 10px 0px;
+  padding: 2vw;
 }
 
 footer p {
@@ -314,5 +314,131 @@ footer p {
   
   .policy {
     font-size: 1.3vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .menu {
+    padding-left: 19.9vw;
+    padding-right: 46.15vw;
+    padding-top: 79px;
+    padding-bottom: 7vw;
+    font-size: 0.9vw;
+
+  }
+
+  .design {
+    padding-left: 20.5vw;
+    padding-right: 52vw;
+    padding-bottom: 7vw;
+  }
+
+  .design_title {
+    font-size: 2.8vw;
+    line-height: 3vw;
+    padding-bottom: 2.5vw;
+    text-align: left;
+    color: deeppink;
+  }
+
+  .design_description,
+  .about_me_description,
+  .work_description {
+    font-size: 0.9vw;
+    line-height: 2vw;
+    padding: 0;
+    text-align: left;
+    padding-bottom: 1.5vw;
+  }
+
+  .design_button {
+    font-size: 0.7vw;
+    padding: 1.2vw 1vw;
+    margin: 0;
+    background-color: cornflowerblue;
+  }
+
+  .about_me {
+    padding-top: 6vw;
+    padding-bottom: 4vw;
+  }
+
+  .about_me_title,
+  .work_title {
+    font-size: 2vw;
+    margin: 0;
+    padding-bottom: 2vw;
+    text-align: center;
+    color: deeppink;
+  }
+  
+  .about_me_description,
+  .work_description {
+    text-align: center;
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 36.5vw;
+    padding-right: 36.5vw;
+  }
+
+  .projects {
+    gap: 40px;
+    padding: 5vw 10vw;
+    background-color: cornflowerblue;
+  }
+
+  .projects_item img {
+    width: 3.6vw;
+    height: 3.6vw;
+  }
+
+  .projects_description {
+    padding-bottom: 0.2vw;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.2vw;
+  }
+
+  .projects_description p {
+    font-size: 1vw;
+  }
+
+  .work {
+    padding-top: 4vw;
+  }
+
+  .work_title {
+    padding-top: 0;
+  }
+
+  .video_container {
+    padding-bottom: 3vw;
+  }
+
+  .video {
+    width: 60%;
+  }
+
+  .play_button {
+    width: 5vw;
+    height: 5vw;
+  }
+
+  footer {
+    padding: 2vw;
+    background-color: cornflowerblue;
+  }
+
+  footer p {
+    padding-left: 19vw;
+  }
+
+  .name {
+    font-size: 1.3vw;
+  }
+
+  .policy {
+    font-size: 1vw;
+    line-height: 3vw;
   }
 }
