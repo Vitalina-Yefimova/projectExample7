@@ -1,49 +1,46 @@
-ul {
-  list-style-type: none;
+.flex_column_center {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
-
-a {
-  text-decoration: none;
+.text-align-left {
+  text-align: left;
 }
-
 body {
+  margin: 0;
   font-family: 'Roboto';
   width: 100%;
-  margin: 0;
 }
-
-
 .menu {
+  list-style-type: none;
   display: flex;
   justify-content: space-around;
   background-color: #EEEFF1;
-  color: var(--Accent, #34547A);
+  color: #34547A;
+  align-items: center;
+  margin: 0;
+  padding: 10px 0px;
   font-size: 2vw;
   font-style: normal;
   font-weight: 500;
   line-height: 4vw;
-  align-items: center;
-  margin: 0;
   padding: 15px 0px;
 }
-
 .design {
+  background-color: #EEEFF1;
   display: flex;
   flex-direction: column;
   text-align: center;
-  background: #EEEFF1;
   padding-bottom: 20px;
 }
-
-.design_title {
+.design .design_title {
   font-size: 5vw;
   font-style: normal;
   font-weight: 500;
   line-height: 15vw;
   margin: 0;
 }
-
-.design_description {
+.design .design_description {
   color: #727272;
   font-size: 2.5vw;
   font-style: normal;
@@ -52,19 +49,19 @@ body {
   padding: 0px 25px;
   margin: 0;
 }
-
-.design_button {
-  margin: 0 auto;
-  background-color: #34547A;;
-  color: #FFF;
+.design .design_button {
+  text-decoration: none;
   font-size: 2vw;
   font-style: normal;
   font-weight: 400;
+  line-height: normal;
+  margin: 0 auto;
+  background-color: #34547A;
+  color: #FFF;
   letter-spacing: 1.6px;
   padding: 8px 8px;
   margin-top: 15px;
 }
-
 .about_me {
   display: flex;
   flex-direction: column;
@@ -72,15 +69,13 @@ body {
   padding-bottom: 20px;
   background: #F9F9F9;
 }
- 
-.about_me_title { 
+.about_me .about_me_title {
   font-size: 4vw;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
-
-.about_me_description {
+.about_me .about_me_description {
   color: #727272;
   font-size: 2.5vw;
   font-style: normal;
@@ -89,33 +84,28 @@ body {
   padding: 0px 25px;
   margin: 0;
 }
-
 .projects {
   display: flex;
-  background-color: var(--Accent, #34547A);
+  background-color: #34547A;
   flex-wrap: wrap;
   justify-content: center;
   padding: 0px 20px;
 }
-
-.projects_item {
+.projects .projects_item {
   display: flex;
   flex-direction: row;
   padding-top: 7px;
 }
-
-.projects_item img {
+.projects .projects_item img {
   width: 5vw;
   height: 5vw;
 }
-
-.projects_description {
+.projects .projects_description {
   display: flex;
   flex-direction: column;
   padding: 0px 10px 10px 1vw;
 }
-
-.projects_description p {
+.projects .projects_description p {
   color: #FFF;
   font-size: 2vw;
   font-style: normal;
@@ -123,16 +113,14 @@ body {
   line-height: normal;
   margin: 0;
 }
-
 .work {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background: var(--Silver, #EEEFF1);
+  background-color: #EEEFF1;
   padding-bottom: 30px;
 }
-
-.work_title {
+.work .work_title {
   font-size: 4vw;
   font-style: normal;
   font-weight: 500;
@@ -140,26 +128,22 @@ body {
   margin: 0;
   padding: 16px 0px;
 }
-
-.work_description {
+.work .work_description {
   color: #727272;
-  font-size: 2.5vw;
+  font-size: 5vw / 2;
   font-style: normal;
   font-weight: 400;
   line-height: 5vw;
-  padding: 0px 25px 20px;
   margin: 0;
+  padding: 0px 25px 20px;
 }
-
-.video_container {
+.work .video_container {
   position: relative;
 }
-
-.video {
+.work .video {
   width: 85%;
 }
-
-.play_button {
+.work .play_button {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -167,216 +151,226 @@ body {
   width: 7vw;
   height: 7vw;
 }
-
 footer {
-  background: var(--Accent, #34547A);
+  background: #34547A;
   padding: 2vw;
 }
-
 footer p {
   margin: 0;
   padding-left: 20px;
 }
-
-.name {
+footer .name {
   color: #FFF;
   font-size: 2vw;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
-
-.policy {
+footer .policy {
   color: #FFF;
   font-size: 1.5vw;
   font-style: normal;
   font-weight: 400;
   line-height: 6vw;
 }
-
-
-@media (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .menu {
     font-size: 1.9vw;
+    font-style: normal;
+    font-weight: 500;
     line-height: 4.5vw;
     padding: 20px 0;
-    background-color: aquamarine;
   }
-
-  .design_title {
+  .design .design_title {
     font-size: 4vw;
+    font-style: normal;
+    font-weight: 500;
     line-height: 14vw;
   }
-
-  .design_description,
-  .about_me_description,
-  .work_description {
+  .design .design_description {
     font-size: 2.4vw;
+    font-style: normal;
+    font-weight: 400;
     line-height: 4vw;
   }
-  
-  .design_button {
+  .design .design_button {
     font-size: 2.2vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
     padding: 10px 10px;
-    background-color: chartreuse; 
   }
-  
-  .about_me_title,
-  .work_title {
+  .about_me .about_me_title {
     font-size: 3.8vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
   }
-
+  .about_me .about_me_description {
+    font-size: 2.4vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 4vw;
+  }
   .projects {
     gap: 11px;
     padding: 20px 0;
   }
-  
-  .projects_item img {
+  .projects .projects_item img {
     width: 4.6vw;
     height: 4.6vw;
   }
-  
-  .projects_description p {
+  .projects .projects_description p {
     font-size: 1.8vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
   }
-  
-  .play_button {
-    width: 7.5vw;
-    height: 7.5vw;
+  .work .work_title {
+    font-size: 3.8vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
   }
-
-  .name {
+  .work .work_description {
+    font-size: 2.4vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 4vw;
+  }
+  .work .play_button {
+    @size (7.5vw, 7.5vw);
+  }
+  footer .name {
     font-size: 1.8vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
   }
-  
-  .policy {
+  footer .policy {
     font-size: 1.3vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
   }
 }
-
-@media (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
   .menu {
-    padding-left: 19.9vw;
-    padding-right: 46.15vw;
-    padding-top: 79px;
-    padding-bottom: 7vw;
+    padding: 79px 46.15vw 7vw 19.9vw;
     font-size: 0.9vw;
-
+    font-style: normal;
+    font-weight: 500;
+    line-height: 4.5vw;
   }
-
   .design {
-    padding-left: 20.5vw;
-    padding-right: 52vw;
-    padding-bottom: 7vw;
+    padding: 0 52vw 7vw 20.5vw;
   }
-
-  .design_title {
+  .design .design_title {
     font-size: 2.8vw;
+    font-style: normal;
+    font-weight: 500;
     line-height: 3vw;
     padding-bottom: 2.5vw;
     text-align: left;
-    color: deeppink;
   }
-
-  .design_description,
-  .about_me_description,
-  .work_description {
+  .design .design_description {
     font-size: 0.9vw;
+    font-style: normal;
+    font-weight: 400;
     line-height: 2vw;
-    padding: 0;
+    padding: 0 0 1.5vw 0;
     text-align: left;
-    padding-bottom: 1.5vw;
   }
-
-  .design_button {
+  .design .design_button {
     font-size: 0.7vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
     padding: 1.2vw 1vw;
     margin: 0;
-    background-color: cornflowerblue;
     max-width: 33%;
   }
-
   .about_me {
-    padding-top: 6vw;
-    padding-bottom: 4vw;
+    padding: 6vw 0 4vw 0;
   }
-
-  .about_me_title,
-  .work_title {
+  .about_me .about_me_title {
     font-size: 2vw;
     margin: 0;
     padding-bottom: 2vw;
-    text-align: center;
-    color: deeppink;
   }
-  
-  .about_me_description,
-  .work_description {
-    text-align: center;
+  .about_me .about_me_description {
     margin: 0 auto;
-    text-align: center;
-    padding-left: 36.5vw;
-    padding-right: 36.5vw;
+    padding: 0 36.5vw;
+    font-size: 0.9vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2vw;
   }
-
   .projects {
     gap: 40px;
     padding: 5vw 10vw;
-    background-color: cornflowerblue;
   }
-
-  .projects_item img {
+  .projects .projects_item img {
     width: 3.6vw;
     height: 3.6vw;
   }
-
-  .projects_description {
-    padding-bottom: 0.2vw;
+  .projects .projects_description {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 0.2vw;
     padding-top: 0.2vw;
   }
-
-  .projects_description p {
+  .projects .projects_description p {
     font-size: 1vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
   }
-
   .work {
     padding-top: 4vw;
   }
-
-  .work_title {
-    padding-top: 0;
+  .work .work_title {
+    margin: 0;
+    padding: 0, 0, 2vw, 0;
+    font-size: 2vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
   }
-
+  .work .work_description {
+    font-size: 0.9vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2vw;
+    margin: 0 auto;
+    padding: 0 36.5vw 1.5vw 36.5vw;
+  }
   .video_container {
     padding-bottom: 3vw;
   }
-
-  .video {
+  .video_container .video {
     width: 60%;
   }
-
-  .play_button {
+  .video_container .play_button {
     width: 5vw;
     height: 5vw;
   }
-
   footer {
     padding: 2vw;
-    background-color: cornflowerblue;
   }
-
   footer p {
     padding-left: 19vw;
   }
-
-  .name {
+  footer .name {
     font-size: 1.3vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
   }
-
-  .policy {
+  footer .policy {
     font-size: 1vw;
+    font-style: normal;
+    font-weight: 500;
     line-height: 3vw;
   }
 }
