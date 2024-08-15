@@ -1,0 +1,15 @@
+@import "_variables.less";
+@import "_mixins.less";
+
+.menu {
+  list-style-type: @list-style-none;
+  display: @display-flex;
+  justify-content: space-around;
+  background-color: @primary-color;
+  color: @color-button;
+  align-items: center;
+  margin: @margin-zero;
+  padding: 10px 0px;
+  .font (@base-size - 3, normal, 500, @base-size - 1);
+  padding: 15px 0px;
+}

@@ -1,0 +1,194 @@
+@import "_variables.less";
+@import "_mixins.less";
+
+@tablet: ~"only screen and (min-width: 768px)";
+@media @tablet {
+
+  .menu {
+    .font (1.9vw, normal, 500, 4.5vw);
+    padding: 20px 0;
+  }
+
+  .design {
+  .design_title {
+    .font (4vw, normal, 500, 14vw);
+  }
+  .design_description {
+    .font (2.4vw, normal, 400, 4vw);
+  }
+  .design_button {
+    .font (2.2vw, normal, 400, normal);
+    padding: 10px 10px;
+  }
+}
+
+  .about_me {
+    
+    .about_me_title {
+      .font (3.8vw, normal, 500, normal);
+    }
+  
+    .about_me_description {
+      .font (2.4vw, normal, 400, 4vw);
+    }
+  }
+  
+  .projects {
+    gap: 11px;
+    padding: 20px 0;
+
+  .projects_item {
+    
+    & img {
+  .size (4.6vw, 4.6vw);
+  }
+  }
+
+  .projects_description {
+  
+  & p {
+    .font (1.8vw, normal, 500, normal);
+  }
+  }
+}
+
+  .work {
+    
+  .work_title {
+    .font (3.8vw, normal, 500, normal);
+    }
+  
+    .work_description {
+    .font (2.4vw, normal, 400, 4vw);
+  }
+
+  .play_button {
+    @size (7.5vw, 7.5vw);
+  }
+}
+
+  footer {
+  .name {
+    .font (1.8vw, normal, 500, normal);
+  }
+
+  .policy {
+    .font (1.3vw, normal, 500, normal);
+  }
+}
+}
+
+@desktop: ~"only screen and (min-width: 1024px)";
+@media @desktop {
+  
+  .menu {
+    padding: 79px 46.15vw 7vw 19.9vw;
+    .font (0.9vw, normal, 500, 4.5vw);
+  }
+  
+  .design {
+    padding: 0 52vw 7vw 20.5vw;
+  
+  .design_title {
+    .font (2.8vw, normal, 500, 3vw);
+    padding-bottom: 2.5vw;
+    .text-align-left;
+  }
+  
+  .design_description {
+    .font (0.9vw, normal, 400, 2vw);
+    padding: 0 0 1.5vw 0;
+    .text-align-left;
+  }
+  
+  .design_button {
+    .font (0.7vw, normal, 400, normal);
+    padding: 1.2vw 1vw;
+    margin: @margin-zero;
+    max-width: 33%;
+  }
+}
+  
+  .about_me {
+    padding: 6vw 0 4vw 0;
+    
+  .about_me_title {
+    font-size: 2vw;
+    margin: @margin-zero;
+    padding-bottom: 2vw;
+  }
+  
+  .about_me_description {
+    margin: @margin-zero-auto;
+    padding: 0 36.5vw;
+    .font (0.9vw, normal, 400, 2vw);
+  }
+}
+
+  .projects {
+    gap: 40px;
+    padding: 5vw 10vw;
+  
+  .projects_item {
+  
+  & img {
+    .size (3.6vw, 3.6vw);
+  }
+}
+  .projects_description {
+    display: @display-flex;
+    justify-content: space-between;
+    padding-bottom: 0.2vw;
+    padding-top: 0.2vw;
+  
+  & p {
+    .font (1vw, normal, 500, normal);
+  }
+}
+}
+  
+
+  .work {    
+    padding-top: 4vw;
+    
+  .work_title {
+    margin: @margin-zero;
+    padding: 0, 0, 2vw, 0;
+    .font (2vw, normal, 500, normal);
+  }
+
+  .work_description {
+    .font (0.9vw, normal, 400, 2vw);
+    margin: @margin-zero-auto;
+    padding: 0 36.5vw 1.5vw 36.5vw;
+  }
+}
+
+  .video_container {
+    padding-bottom: 3vw;
+  
+  .video {
+    width: 60%;
+    }
+  
+  .play_button {
+   .size (5vw, 5vw);
+  }
+}
+
+  footer {
+    padding: 2vw;
+  
+  & p {
+    padding-left: 19vw;
+  }
+  
+  .name {
+    .font (1.3vw, normal, 500, normal);
+    }
+  
+    .policy {
+    .font (1vw, normal, 500, 3vw);
+    }
+}
+}

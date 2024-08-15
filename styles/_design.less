@@ -1,0 +1,31 @@
+@import "_variables.less";
+@import "_mixins.less";
+
+.design {
+  background-color: @primary-color;
+  .flex_column_center;
+  padding-bottom: @padding-bottom;
+  
+  .design_title {
+  .font (5vw, normal, 500, 15vw);
+  margin: @margin-zero;
+  }
+  
+  .design_description {
+  color: @description-color;
+  .font (2.5vw, normal, 400, 5vw);
+  padding: 0px 25px;
+  margin: @margin-zero;
+  }
+  
+  .design_button {
+  text-decoration: @text-decoration-none;
+  .font (2vw, normal, 400, normal);
+  margin: @margin-zero-auto;
+  background-color: @color-button;
+  color: @color-white;
+  letter-spacing: 1.6px;
+  padding: 8px 8px;
+  margin-top: 15px;
+}
+}

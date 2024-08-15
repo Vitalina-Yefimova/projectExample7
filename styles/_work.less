@@ -1,0 +1,37 @@
+@import "_variables.less";
+@import "_mixins.less";
+
+.work {
+  .flex_column_center;
+  background-color: @primary-color;
+  padding-bottom: 30px;
+
+  .work_title {
+    .font (@base-size - 1, normal, 500, normal);
+    margin: @margin-zero;
+    padding: 16px 0px;
+  }
+  
+  .work_description {
+    color: @description-color;
+    .font (@base-size / 2, normal, 400, @base-size);
+    margin: @margin-zero;
+    padding: 0px 25px 20px;
+  }
+  
+  .video_container {
+    position: relative;
+  }
+  
+  .video {
+    width: 85%;
+  }
+  
+  .play_button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .size (@base-size + 2, @base-size + 2);    
+  }
+}

@@ -1,0 +1,34 @@
+@import "_variables.less";
+@import "_mixins.less";
+
+.projects {
+  display: @display-flex;
+  background-color: @color-button;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0px 20px;
+
+.projects_item {
+  display: @display-flex;
+  flex-direction: row;
+  padding-top: 7px; 
+
+& img {
+  .size (@base-size, @base-size);
+}
+}
+
+.projects_description {
+  display: @display-flex;
+  flex-direction: column;
+  padding: 0px 10px 10px 1vw;
+
+& p {
+  color: @color-white;
+  .font (@base-size - 3, normal, 500, normal);
+  margin: @margin-zero;
+}
+}
+}
+
+
