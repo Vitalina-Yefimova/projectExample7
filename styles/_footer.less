@@ -1,0 +1,23 @@
+@import "_variables.less";
+@import "_mixins.less";
+
+footer {
+  background: @color-button;
+  padding: @base-size - 3;
+
+& p {
+  margin: @margin-zero;
+  padding-left: 20px;
+}
+
+.name {
+  color: @color-white;
+  .font (@base-size - 3, normal, 500, normal);
+}
+
+.policy {
+  color: @color-white;
+  .font (@base-size - 3.5, normal, 400, @base-size + 1);
+}
+}
+
