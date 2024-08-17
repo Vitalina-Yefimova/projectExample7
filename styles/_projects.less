@@ -31,4 +31,50 @@
 }
 }
 
+@media @tablet {
 
+  .projects {
+    gap: 11px;
+    padding: 20px 0;
+
+    .projects_item {
+
+      & img {
+        .size (4.6vw, 4.6vw);
+      }
+    }
+
+    .projects_description {
+
+      & p {
+        .font (1.8vw, normal, 500, normal);
+      }
+    }
+  }
+}
+
+@media @desktop {
+
+  .projects {
+    gap: 40px;
+    padding: 5vw 10vw;
+
+    .projects_item {
+
+      & img {
+        .size (3.6vw, 3.6vw);
+      }
+    }
+
+    .projects_description {
+      display: @display-flex;
+      justify-content: space-between;
+      padding-bottom: 0.2vw;
+      padding-top: 0.2vw;
+
+      & p {
+        .font (1vw, normal, 500, normal);
+      }
+    }
+  }
+}

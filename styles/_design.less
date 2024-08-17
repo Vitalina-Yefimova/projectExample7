@@ -29,3 +29,47 @@
   margin-top: 15px;
 }
 }
+
+@media @tablet {
+
+  .design {
+    .design_title {
+      .font (4vw, normal, 500, 14vw);
+    }
+
+    .design_description {
+      .font (2.4vw, normal, 400, 4vw);
+    }
+
+    .design_button {
+      .font (2.2vw, normal, 400, normal);
+      padding: 10px 10px;
+    }
+  }
+}
+
+@media @desktop {
+  
+  .design {
+    padding: 0 52vw 7vw 20.5vw;
+
+    .design_title {
+      .font (2.8vw, normal, 500, 3vw);
+      padding-bottom: 2.5vw;
+      .text-align-left;
+    }
+
+    .design_description {
+      .font (0.9vw, normal, 400, 2vw);
+      padding: 0 0 1.5vw 0;
+      .text-align-left;
+    }
+
+    .design_button {
+      .font (0.7vw, normal, 400, normal);
+      padding: 1.2vw 1vw;
+      margin: @margin-zero;
+      max-width: 33%;
+    }
+  }
+}
