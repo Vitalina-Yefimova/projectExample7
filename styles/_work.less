@@ -35,3 +35,52 @@
     .size (@base-size + 2, @base-size + 2);    
   }
 }
+
+@media @tablet {
+
+  .work {
+
+    .work_title {
+      .font (3.8vw, normal, 500, normal);
+    }
+
+    .work_description {
+      .font (2.4vw, normal, 400, 4vw);
+    }
+
+    .play_button {
+      .size (7.5vw, 7.5vw);
+    }
+  }
+}
+
+@media @desktop {
+
+  .work {
+    padding-top: 4vw;
+
+    .work_title {
+      margin: @margin-zero;
+      padding: 0, 0, 2vw, 0;
+      .font (2vw, normal, 500, normal);
+    }
+
+    .work_description {
+      .font (0.9vw, normal, 400, 2vw);
+      margin: @margin-zero-auto;
+      padding: 0 36.5vw 1.5vw 36.5vw;
+    }
+
+    .video_container {
+      padding-bottom: 3vw;
+    }
+
+    .video {
+      width: 60%;
+    }
+
+    .play_button {
+      .size (5vw, 5vw);
+    }
+  }
+}
